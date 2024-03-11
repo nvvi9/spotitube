@@ -1,0 +1,19 @@
+[package]
+name = "spotitube-infrastructure"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+spotitube-domain = { path = "../spotitube-domain" }
+spotitube-core = { path = "../spotitube-core" }
+rust-argon2 = "2.1.0"
+serde = { version = "1.0.197", features = ["derive"] }
+time = "0.3.34"
+tokio = { version = "1.36.0", features = ["full"] }
+tracing = "0.1.40"
+sqlx = { version = "0.7.3", features = ["runtime-tokio-rustls", "postgres", "time", "uuid"] }
+uuid = { version = "1.7.0", features = ["serde", "v4"] }
+async-trait = "0.1.77"
+jsonwebtoken = "9.2.0"

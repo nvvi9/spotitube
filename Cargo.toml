@@ -1,0 +1,7 @@
+[workspace]
+
+members = [ "crates/spotitube-api",
+    "crates/spotitube-core",
+    "crates/spotitube-domain",
+    "crates/spotitube-infrastructure",
+]
